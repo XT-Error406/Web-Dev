@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road</title>
+</head>
+<body>
+   
+    <!--srcset images acc to dpr   responsive images  default no need to specfiy 1x -->
+    <!-- <img width="100%"
+    srcset="images/error.png 1x,  
+    images/road2.jpg 2x,
+    images/road.jpg 3x"
+    src="images/road.jpg" alt="road images"> -->
+    
+    <!-- sizes condition checked from lowest to highest pixel -->
+    <img width="100%"
+    srcset="images/road_high.jpg 1000w,
+    images/road_mid.jpg 700w,
+    images/error.png 400w"
+    sizes="(max-width:400px)400px,
+    (max-width:700px)700px,
+    1000px"
+     src="images/road_high.jpg" alt="this is road images">
+
+</body>
+</html>   
